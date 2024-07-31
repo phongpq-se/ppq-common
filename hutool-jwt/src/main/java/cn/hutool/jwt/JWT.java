@@ -40,9 +40,11 @@ import java.util.Map;
 public class JWT implements RegisteredPayload<JWT> {
 
 	private final JWTHeader header;
+
 	private final JWTPayload payload;
 
 	private Charset charset;
+
 	private JWTSigner signer;
 
 	private List<String> tokens;
